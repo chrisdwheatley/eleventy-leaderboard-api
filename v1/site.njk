@@ -1,0 +1,8 @@
+---
+pagination:
+    data: leaderboard.sites
+    size: 1
+    alias: site
+permalink: "v1/leaderboard/{{ site.url | slug }}.json"
+---
+{{ site | dump | safe }}
